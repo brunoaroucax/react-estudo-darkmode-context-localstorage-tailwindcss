@@ -6,18 +6,21 @@ import {
 	useState,
 } from 'react';
 
-const STORAGE_KEY = 'themeKeyContext';
+const STORAGE_KEY = 'themeContextKey';
 
-type ThemeContextType = {
+type ThemeContext = {
 	theme: string;
-	setTheme: (theme: string) => void;
+	setTheme: (t: string) => void;
 };
 
-export const ThemeContext = createContext<ThemeContextType | null>(null);
+export const ThemeContext = createContext<ThemeContext | null>(null);
 
-export const ThemeProvider = ({ children }: { children: ReactNode }) => {
+type Props = {
+	children: ReactNode;
+};
+export const ThemeProvider = ({ children }: Props) => {
 	const [theme, setTheme] = useState(
-		localStorage.getItem(STORAGE_KEY) || 'light'
+		window.localStorage.getItem(STORAGE_KEY) || 'light'
 	);
 
 	useEffect(() => {
@@ -26,12 +29,17 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 		} else {
 			document.documentElement.classList.remove('dark');
 		}
-		localStorage.setItem(STORAGE_KEY, theme);
+
+		window.localStorage.setItem(STORAGE_KEY, theme);
 	}, [theme]);
 
 	return (
-		<ThemeContext.Provider value={{ theme, setTheme }}></ThemeContext.Provider>
+		<ThemeContext.Provider value={{ theme, setTheme }}>
+			{children}
+		</ThemeContext.Provider>
 	);
 };
 
-export const useTheme = () => useContext(ThemeContext);
+export const useTheme = () => {
+	return useContext(ThemeContext);
+};
