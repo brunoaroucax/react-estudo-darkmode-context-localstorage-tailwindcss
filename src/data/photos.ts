@@ -1,11 +1,11 @@
 import { Photo } from "@/types/Photo";
 
 export const photos: Photo[] = [
-  { id: 1, description: 'Image 1', url: 'https://images.unsplash.com/photo-1698751437831-ef3209c04fee?auto=format&fit=crop&q=80&w=1552&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: true },
-  { id: 2, description: 'Image 2', url: 'https://images.unsplash.com/photo-1688151049001-522f61b0ebee?auto=format&fit=crop&q=80&w=1434&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: true },
-  { id: 3, description: 'Image 3', url: 'https://plus.unsplash.com/premium_photo-1694884742260-50858009f040?auto=format&fit=crop&q=80&w=1390&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: true },
-  { id: 4, description: 'Image 4', url: 'https://images.unsplash.com/photo-1695653422676-d9dd88400e21?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: true },
-  { id: 5, description: 'Image 5', url: 'https://images.unsplash.com/photo-1698688334089-c68105801d02?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: true },
+  { id: 1, description: 'Image 1', url: 'https://images.unsplash.com/photo-1698751437831-ef3209c04fee?auto=format&fit=crop&q=80&w=1552&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: false },
+  { id: 2, description: 'Image 2', url: 'https://images.unsplash.com/photo-1688151049001-522f61b0ebee?auto=format&fit=crop&q=80&w=1434&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: false },
+  { id: 3, description: 'Image 3', url: 'https://plus.unsplash.com/premium_photo-1694884742260-50858009f040?auto=format&fit=crop&q=80&w=1390&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: false },
+  { id: 4, description: 'Image 4', url: 'https://images.unsplash.com/photo-1695653422676-d9dd88400e21?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: false },
+  { id: 5, description: 'Image 5', url: 'https://images.unsplash.com/photo-1698688334089-c68105801d02?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: false },
   { id: 6, description: 'Image 6', url: 'https://images.unsplash.com/photo-1698716206713-b2a8c7e50267?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: true },
   { id: 7, description: 'Image 7', url: 'https://images.unsplash.com/photo-1682695798522-6e208131916d?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: true },
   { id: 8, description: 'Image 8', url: 'https://images.unsplash.com/photo-1698734387189-b90c7dacef27?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', isMain: true },
